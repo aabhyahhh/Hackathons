@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #191919;
+    margin: 0 auto;
+}
+.h-title {
+    width: 100vh;
+    height: 100vh; 
+    position: absolute;
+    margin-left: 270px;
+}
+
+.titlefront{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 7rem; 
+    font-weight: 100; 
+    color: #121212;
+    position: absolute;
+    margin: 10%;
+    margin-top: 220px;
+    text-align: center;
+    margin-left: 200px;
+    justify-content: center;
+    display: flex;
+}
+
+.titlefront > span{
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow{
+    0%, 100%{
+        color: rgb(178, 118, 235);
+        text-shadow: 0 0 12px rgb(101, 85, 194),  0 0 50px rgb(83, 61, 205),  0 0 100px rgb(67, 50, 162);
+    }
+    10%, 90%{
+        color: #000;
+        text-shadow: none;
+    }
+}
+
+.titlefront > span:nth-child(2){
+    animation-delay: 0.25s;
+}
+
+.titlefront > span:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.titlefront > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+
+.titlefront > span:nth-child(5){
+    animation-delay: 1s;
+}
+
+.titlefront > span:nth-child(6){
+    animation-delay: 1.25s;
+}
+
+.titlefront > span:nth-child(7){
+    animation-delay: 1.5s;
+}
+
+.titlefront > span:nth-child(8){
+    animation-delay: 1.75s;
+}
+
+.titlefront > span:nth-child(9){
+    animation-delay: 2s;
+}
+
+.titlefront > span:nth-child(10){
+    animation-delay: 2.25s;
+}
+
+.neon-button {
+    font-family: 'Raleway Dots', sans-serif;
+    margin-top: 650px;
+    margin-left: 70px;
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:  rgb(178, 118, 235) ;
+    border: currentColor 0.125em solid;
+    padding: 0.25rem 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 rgb(178, 118, 235), 0 0 0.5em 0 rgb(178, 118, 235);
+    line-height: 20px;
+    position: relative;
+}   
+
+.neon-button::before {
+    pointer-events: none;
+    content: ""; 
+    position: absolute;
+    background: rgb(163, 89, 232);
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.15);
+    filter: blur(2em);
+    opacity: 0.7;
+
+}
+
+.neon-button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2em 0.5em rgb(163, 89, 232) ;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    background: rgb(163, 89, 232);
+    color: #121212;
+    text-shadow: none;
+
+}
+
+.neon-button:hover::after{
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 50;
+    font-size: 3rem;
+}
+
+.neon-button2 {
+    font-family: 'Raleway Dots', sans-serif;
+    margin-top: 650px;
+    margin-left: 70px;
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:  rgb(178, 118, 235) ;
+    border: currentColor 0.125em solid;
+    padding: 0.25rem 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 rgb(178, 118, 235), 0 0 0.5em 0 rgb(178, 118, 235);
+    line-height: 20px;
+    position: relative;
+}   
+
+.neon-button2::before {
+    pointer-events: none;
+    content: ""; 
+    position: absolute;
+    background: rgb(163, 89, 232);
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.15);
+    filter: blur(2em);
+    opacity: 0.7;
+
+}
+
+.neon-button2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2em 0.5em rgb(163, 89, 232) ;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.neon-button2:hover,
+.neon-button2:focus {
+    background: rgb(163, 89, 232);
+    color: #121212;
+    text-shadow: none;
+
+}
+
+.neon-button2:hover::after{
+    opacity: 1;
+}
+
+.neon-button3 {
+    font-family: 'Raleway Dots', sans-serif;
+    margin-top: 90px;
+    margin-left: 70px;
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:  rgb(178, 118, 235) ;
+    border: currentColor 0.125em solid;
+    padding: 0.25rem 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 rgb(178, 118, 235), 0 0 0.5em 0 rgb(178, 118, 235);
+    line-height: 20px;
+    position: relative;
+}   
+
+.neon-button3::before {
+    pointer-events: none;
+    content: ""; 
+    position: absolute;
+    background: rgb(163, 89, 232);
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.15);
+    filter: blur(2em);
+    opacity: 0.7;
+
+}
+
+.neon-button3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2em 0.5em rgb(163, 89, 232) ;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.neon-button3:hover,
+.neon-button3:focus {
+    background: rgb(163, 89, 232);
+    color: #121212;
+    text-shadow: none;
+
+}
+
+.neon-button3:hover::after{
+    opacity: 1;
+}
+
+.neon-button4 {
+    font-family: 'Raleway Dots', sans-serif;
+    margin-top: 100px;
+    margin-left: 70px;
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:  rgb(178, 118, 235) ;
+    border: currentColor 0.125em solid;
+    padding: 0.25rem 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 rgb(178, 118, 235), 0 0 0.5em 0 rgb(178, 118, 235);
+    line-height: 20px;
+    position: relative;
+}   
+
+.neon-button4::before {
+    pointer-events: none;
+    content: ""; 
+    position: absolute;
+    background: rgb(163, 89, 232);
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.15);
+    filter: blur(2em);
+    opacity: 0.7;
+
+}
+
+.neon-button4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2em 0.5em rgb(163, 89, 232) ;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.neon-button4:hover,
+.neon-button4:focus {
+    background: rgb(163, 89, 232);
+    color: #121212;
+    text-shadow: none;
+
+}
+
+.neon-button4:hover::after{
+    opacity: 1;
+}
+
+.neon-button5 {
+    font-family: 'Raleway Dots', sans-serif;
+    margin-top: 90px;
+    margin-left: 70px;
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:  rgb(178, 118, 235) ;
+    border: currentColor 0.125em solid;
+    padding: 0.25rem 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 rgb(178, 118, 235), 0 0 0.5em 0 rgb(178, 118, 235);
+    line-height: 20px;
+    position: relative;
+}   
+
+.neon-button5::before {
+    pointer-events: none;
+    content: ""; 
+    position: absolute;
+    background: rgb(163, 89, 232);
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.15);
+    filter: blur(2em);
+    opacity: 0.7;
+
+}
+
+.neon-button5::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2em 0.5em rgb(163, 89, 232) ;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.neon-button5:hover,
+.neon-button5:focus {
+    background: rgb(163, 89, 232);
+    color: #121212;
+    text-shadow: none;
+
+}
+
+.neon-button5:hover::after{
+    opacity: 1;
+}
+
